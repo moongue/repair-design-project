@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Futura Book';
+  src: url("../assets/font/FuturaBook/FuturaBookC.eot");
+  src: url("../assets/font/FuturaBook/FuturaBookC.eot?#iefix") format("embedded-opentype"), url("../assets/font/FuturaBook/FuturaBookC.woff") format("woff"), url("../assets/font/FuturaBook/FuturaBookC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura Demi';
+  src: url("../assets/font/FuturaDemi/FuturaDemiC.eot");
+  src: url("../assets/font/FuturaDemi/FuturaDemiC.eot?#iefix") format("embedded-opentype"), url("../assets/font/FuturaDemi/FuturaDemiC.woff") format("woff"), url("../assets/font/FuturaDemi/FuturaDemiC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Futura Book', 'Futura Demi', sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+
+input:focus,
+input:active,
+textarea:focus,
+textarea:active,
+button:focus,
+button:active,
+span:focus,
+span:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+select:focus,
+select:hover,
+option:hover,
+option:focus {
+  outline: none;
+}
+
+/*# sourceMappingURL=maps/style.css.map */
