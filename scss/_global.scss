@@ -23,3 +23,22 @@ option:hover,
 option:focus {
   outline: none;
 }
+
+.wrapper {
+  max-width: 1260px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.btn {
+  font-family: 'Futura Demi', sans-serif;
+  font-size: 13px;
+  color: $white;
+  text-transform: uppercase;
+  padding: 13px 33px;
+  background: $green;
+  box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+}

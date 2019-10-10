@@ -7,17 +7,37 @@
 }
 
 @media #{$lg} {
-  
+  nav {
+    max-width: 400px;
+  }
 }
 
 @media #{$md} {
-  
+  .md-hide {
+    display: none;
+  }
 }
 
 @media #{$sm} {
-  
+  .wrapper {
+    padding: 0 15px;
+  }
+  .sm-hide {
+    display: none;
+  }
 }
 
 @media #{$xs} {
-  
+  .logo {
+    font-size: 12px;
+  }
+  .header {
+    .tel {
+      font-size: 12px;
+      color: $white;
+      &:before {
+        display: none;
+      }
+    }
+  }
 }
