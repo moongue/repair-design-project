@@ -1,0 +1,86 @@
+//Banner
+.banner {
+  display: flex;
+
+  .buttons {
+    margin-top: 41px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 434px;
+  }
+}
+
+.bg-banner {
+  background: url(../assets/images/bg-banner.jpg) no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  flex-grow: 1;
+}
+
+.way-down {
+  font-family: 'Yeseva One', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  max-width: 247px;
+  background: $black;
+  margin-top: -55px;
+  position: relative;
+  cursor: pointer;
+  img {
+    padding-left: 12px;
+  }
+}
+
+.instagram-link {
+  font-family: 'Futura Demi', sans-serif;
+  font-size: 14px;
+  color: $green;
+  display: flex;
+  align-items: center;
+  writing-mode: tb-rl;
+  text-transform: uppercase;
+  padding-top: 227px;
+  width: 6%;
+  text-decoration: none;
+  position: relative;
+
+  &:hover {
+    &:after {
+      top: 49%;
+    }
+  }
+
+  &:after {
+    content: '';
+    transition: all .2s ease-in-out;
+    height: 51px;
+    width: 1px;
+    background: $green;
+    position: absolute;
+    left: 50%;
+    top: 47%;
+  }
+}
+
+.shadow-bg {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 194px 0 208px 60px;
+
+}
+
+h1 {
+  font-family: 'Yeseva One', cursive;
+  font-size: 40px;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.description-page {
+  margin-top: 20px;
+  font-size: 22px;
+  line-height: 1.4;
+}

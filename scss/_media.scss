@@ -25,6 +25,9 @@
   .sm-hide {
     display: none;
   }
+  .shadow-bg {
+    padding: 85px 0 61px;
+  }
 }
 
 @media #{$xs} {
@@ -37,6 +40,29 @@
       color: $white;
       &:before {
         display: none;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 23px;
+  }
+
+  .description-page {
+    margin-top: 16px;
+    font-size: 18px;
+  }
+  .banner {
+    .buttons {
+      margin-top: 32px;
+      flex-direction: column;
+      max-width: 100%;
+
+      .btn {
+        width: 100%;
+        &:first-child {
+          margin-bottom: 26px;
+        }
       }
     }
   }
