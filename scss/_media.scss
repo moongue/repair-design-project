@@ -1,9 +1,9 @@
 @media #{$xll} {
-  
+
 }
 
 @media #{$xl} {
-  
+
 }
 
 @media #{$lg} {
@@ -22,15 +22,74 @@
   .wrapper {
     padding: 0 15px;
   }
+  .sm-show {
+    display: flex;
+  }
   .sm-hide {
     display: none;
   }
   .shadow-bg {
     padding: 85px 0 61px;
   }
+
+  h2 {
+    text-align: center;
+
+    &.after-line {
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  //Portfolio
+  .box {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+  .feature {
+    margin-right: 0;
+  }
+  .description-project {
+    text-align: center;
+    max-width: inherit;
+    padding: 0 17px;
+  }
+  .feature-list {
+    max-width: inherit;
+  }
+  .slider {
+    + .feature-list {
+      display: flex;
+    }
+  }
+  .slider-img {
+    margin-top: 36px;
+
+    &__item {
+      width: 100vw;
+
+      img {
+        width: 100vw;
+      }
+    }
+  }
+  .slider-img-arrow {
+    &__item {
+      &_next {
+        right: 15px;
+      }
+
+      &_prev {
+        left: 15px;
+        display: flex;
+      }
+    }
+  }
 }
 
 @media #{$xs} {
+
   .logo {
     font-size: 12px;
   }
@@ -38,6 +97,7 @@
     .tel {
       font-size: 12px;
       color: $white;
+
       &:before {
         display: none;
       }
@@ -47,7 +107,9 @@
   h1 {
     font-size: 23px;
   }
-
+  h2 {
+    font-size: 22px;
+  }
   .description-page {
     margin-top: 16px;
     font-size: 18px;
@@ -60,10 +122,36 @@
 
       .btn {
         width: 100%;
+
         &:first-child {
           margin-bottom: 26px;
         }
       }
+    }
+  }
+  //Portfolio
+  .description-project {
+    margin-top: 22px;
+    font-size: 14px;
+  }
+  .slider-img-arrow {
+    top: calc((100% - 36px) / 2);
+    &__item {
+      width: 36px;
+      height: 36px;
+
+      img {
+        height: 11px;
+      }
+    }
+  }
+  .feature-list {
+    &__name {
+      font-size: 14px;
+    }
+
+    &__signification {
+      font-size: 14px;
     }
   }
 }
