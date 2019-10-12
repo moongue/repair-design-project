@@ -1,0 +1,67 @@
+.prices {
+  margin-top: 147px;
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.price {
+  &:nth-child(2) {
+    margin: 0 10px;
+  }
+  .wrap {
+    width: 100%;
+    max-width: 330px;
+    margin: -126px auto 0;
+  }
+  &__img {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__list {
+    box-sizing: border-box;
+    padding: 25px 34px 64px;
+    background: $white;
+    position: relative;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  }
+
+  &__name {
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 18px;
+    color: $black-3;
+  }
+  &__btn {
+    margin-top: -28px;
+    position: relative;
+    .btn {
+      font-family: 'Yeseva One', sans-serif;
+      font-size: 18px;
+      border-radius: 0;
+      width: 228px;
+    }
+  }
+}
+
+.price-description {
+  margin-top: 10px;
+  &__item {
+    font-size: 15px;
+    color: $grey;
+    padding: 5px 5px 5px 10px;
+    position: relative;
+    &:before {
+      content: '';
+      width: 4px;
+      height: 4px;
+      background: $grey;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 10px;
+    }
+  }
+}

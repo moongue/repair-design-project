@@ -10,11 +10,34 @@
   nav {
     max-width: 400px;
   }
+  //Price
+  .price {
+    .wrap {
+      margin: -25px auto 0;
+    }
+  }
 }
 
 @media #{$md} {
   .md-hide {
     display: none;
+  }
+  //Price
+  .prices {
+    .row {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+  .price {
+    flex-basis: 45%;
+    margin-top: 10px;
+    &:nth-child(2) {
+      margin: 10px 0 0;
+    }
+    .wrap {
+      margin: -126px auto 0;
+    }
   }
 }
 
@@ -124,6 +147,23 @@
       }
     }
   }
+  //Price
+  .prices {
+    .row {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .price {
+    &:nth-child(n + 2) {
+      margin-top: 59px;
+    }
+    &__img {
+      img {
+        max-width: 440px;
+      }
+    }
+  }
 }
 
 
@@ -217,6 +257,11 @@
     .style-checkbox {
       color: $white;
     }
+    .form-feedback {
+      .btn {
+        margin-bottom: -26px;
+      }
+    }
   }
   .description-control {
     color: $white;
@@ -228,5 +273,26 @@
     font-size: 14px;
     padding-top: 21px;
     margin-top: 28px;
+  }
+  //Price
+  .prices {
+    margin-top: 80px;
+  }
+  .price {
+    .wrap {
+      margin-top: -160px;
+      margin-left: 0;
+    }
+    &__name {
+      font-size: 15px;
+    }
+    &__btn {
+      .btn {
+        font-size: 15px;
+      }
+    }
+    .price-description__item {
+      font-size: 13px;
+    }
   }
 }
