@@ -1,0 +1,17 @@
+.projects {
+  margin-top: 153px;
+  .row {
+    margin-top: 38px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .price__img {
+    img {
+      filter: brightness(0.5)
+    }
+  }
+}
+.description-projects {
+  text-align: center;
+  color: $black-3;
+}

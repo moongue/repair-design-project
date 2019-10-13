@@ -1103,6 +1103,30 @@ h1 {
   margin-top: 39px;
 }
 
+.projects {
+  margin-top: 153px;
+}
+
+.projects .row {
+  margin-top: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.projects .price__img img {
+  -webkit-filter: brightness(0.5);
+  filter: brightness(0.5);
+}
+
+.description-projects {
+  text-align: center;
+  color: #363636;
+}
+
 @media only screen and (max-width: 1200px) {
   nav {
     max-width: 400px;
@@ -1156,7 +1180,8 @@ h1 {
     display: none;
   }
 
-  .prices .row {
+  .prices .row,
+  .projects .row {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -ms-flex-pack: distribute;
@@ -1190,6 +1215,10 @@ h1 {
 
   .steps .right-side {
     max-width: inherit;
+  }
+
+  .catalog {
+    margin-top: 100px;
   }
 
   .catalog .content {
@@ -1314,7 +1343,8 @@ h1 {
     margin-top: 0;
   }
 
-  .prices .row {
+  .prices .row,
+  .projects .row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;

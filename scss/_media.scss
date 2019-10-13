@@ -62,7 +62,7 @@
     display: none;
   }
   //Price
-  .prices {
+  .prices, .projects {
     .row {
       flex-wrap: wrap;
       justify-content: space-around;
@@ -92,6 +92,7 @@
   }
   //Catalog
   .catalog {
+    margin-top: 100px;
     .content {
       align-items: center;
     }
@@ -205,7 +206,7 @@
     }
   }
   //Price
-  .prices {
+  .prices, .projects {
     .row {
       flex-direction: column;
       align-items: center;
