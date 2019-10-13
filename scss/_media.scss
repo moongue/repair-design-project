@@ -90,6 +90,12 @@
       max-width: inherit;
     }
   }
+  //Catalog
+  .catalog {
+    .content {
+      align-items: center;
+    }
+  }
 }
 
 @media #{$sm} {
@@ -219,6 +225,32 @@
   //Steps
   .steps {
     display: none;
+  }
+  //Catalog
+  .catalog {
+    background: inherit;
+    margin-top: 55px;
+   .catalog-list {
+     padding: 0;
+     margin: 0 auto;
+   }
+    .catalog-representation {
+      display: none;
+    }
+    .list-style {
+      display: none;
+    }
+    .slider {
+      display: block;
+      margin-top: 30px;
+      .slide {
+        text-align: center;
+        img {
+          width: 100%;
+          max-width: 400px;
+        }
+      }
+    }
   }
 }
 
