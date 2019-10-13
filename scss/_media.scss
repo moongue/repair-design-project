@@ -16,6 +16,45 @@
       margin: -25px auto 0;
     }
   }
+
+  //Steps
+  .steps {
+    .ellipse {
+      svg {
+        height: 507px;
+      }
+    }
+
+    .row {
+      align-items: flex-start;
+      padding-top: 47px;
+    }
+
+    .left-side {
+      margin-left: 245px;
+    }
+
+    .steps-list {
+      min-width: 375px;
+      &__item {
+        p {
+          font-size: 16px;
+        }
+        &:nth-child(2) {
+          margin-top: 43px;
+          margin-left: 63px;
+        }
+        &:nth-child(3) {
+          margin-top: 87px;
+          margin-left: 82px;
+        }
+        &:nth-child(4) {
+          margin-top: 86px;
+          margin-left: 29px;
+        }
+      }
+    }
+  }
 }
 
 @media #{$md} {
@@ -32,11 +71,23 @@
   .price {
     flex-basis: 45%;
     margin-top: 10px;
+
     &:nth-child(2) {
       margin: 10px 0 0;
     }
+
     .wrap {
       margin: -126px auto 0;
+    }
+  }
+  //Steps
+  .steps {
+    background: url(../assets/images/bg-steps.png) no-repeat 0 0;
+    .row {
+      flex-direction: column;
+    }
+    .right-side {
+      max-width: inherit;
     }
   }
 }
@@ -158,11 +209,16 @@
     &:nth-child(n + 2) {
       margin-top: 59px;
     }
+
     &__img {
       img {
         max-width: 440px;
       }
     }
+  }
+  //Steps
+  .steps {
+    display: none;
   }
 }
 
@@ -242,6 +298,7 @@
     background: $black;
     margin-top: 0;
     padding-top: 57px;
+
     .input-styles {
       color: $white;
 
@@ -257,6 +314,7 @@
     .style-checkbox {
       color: $white;
     }
+
     .form-feedback {
       .btn {
         margin-bottom: -26px;
@@ -283,14 +341,17 @@
       margin-top: -160px;
       margin-left: 0;
     }
+
     &__name {
       font-size: 15px;
     }
+
     &__btn {
       .btn {
         font-size: 15px;
       }
     }
+
     .price-description__item {
       font-size: 13px;
     }
