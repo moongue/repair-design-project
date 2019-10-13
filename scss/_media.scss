@@ -103,6 +103,15 @@
       flex-basis: 33.33%;
     }
   }
+  //Our team
+  .team {
+    margin-top: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .person {
+    margin-top: 110px;
+  }
 }
 
 @media #{$sm} {
@@ -262,6 +271,7 @@
   }
   //Projects
   .projects {
+    margin-bottom: 0;
     margin-top: 0;
     padding-top: 190px;
     background: $black;
@@ -276,6 +286,15 @@
   //Goals
   .goals {
     display: none;
+  }
+  //Our team
+  .our-team {
+    margin-top: 0;
+    padding-top: 76px;
+    background: $black;
+  }
+  .more-description-person {
+    color: $white;
   }
 }
 
@@ -412,5 +431,9 @@
     .price-description__item {
       font-size: 13px;
     }
+  }
+  //Our team
+  .more-description-person {
+    display: none;
   }
 }
