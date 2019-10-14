@@ -349,12 +349,14 @@ label {
   left: 0;
 }
 
-.header {
+.header,
+.footer {
   background: #131313;
   padding: 24px 0;
 }
 
-.header .wrapper {
+.header .wrapper,
+.footer .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -366,7 +368,8 @@ label {
   align-items: center;
 }
 
-.header .tel {
+.header .tel,
+.footer .tel {
   font-family: 'Futura Demi', sans-serif;
   font-size: 14px;
   color: #e3b873;
@@ -374,7 +377,8 @@ label {
   position: relative;
 }
 
-.header .tel:before {
+.header .tel:before,
+.footer .tel:before {
   content: '';
   width: 100%;
   height: 1px;
@@ -514,7 +518,7 @@ nav {
   padding: 194px 0 208px 60px;
 }
 
-h1 {
+.title-banner {
   font-family: 'Yeseva One', cursive;
   font-size: 40px;
   line-height: 1.3;
@@ -1364,6 +1368,16 @@ h1 {
   justify-content: space-between;
 }
 
+.description-our-client {
+  font-size: 20px;
+  color: #363636;
+  max-width: 400px;
+  margin: 0 auto;
+  line-height: 1.3;
+  text-align: center;
+  margin-bottom: 39px;
+}
+
 .client {
   background: #fff;
   -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.04);
@@ -1403,7 +1417,7 @@ h1 {
   line-height: 1.6;
 }
 
-.client .footer {
+.client .footer-card {
   height: 54px;
   margin-top: 60px;
   margin-bottom: -110px;
@@ -1549,6 +1563,7 @@ h1 {
   width: 100%;
   max-width: 925px;
   margin: 44px auto 0;
+  padding-bottom: 65px;
 }
 
 .map iframe {
@@ -1930,6 +1945,10 @@ h1 {
     display: none;
   }
 
+  .title-banner {
+    font-size: 23px;
+  }
+
   h1 {
     font-size: 23px;
   }
@@ -2051,8 +2070,17 @@ h1 {
     font-size: 15px;
   }
 
+  .price__list {
+    max-width: 270px;
+  }
+
   .price .price-description__item {
     font-size: 13px;
+  }
+
+  .projects .price__img img {
+    -webkit-filter: brightness(1);
+    filter: brightness(1);
   }
 
   .more-description-person {
@@ -2099,6 +2127,14 @@ h1 {
 
   .contacts .form-feedback .wrap-checkbox label {
     margin-top: 22px;
+  }
+
+  .map {
+    padding-bottom: 0;
+  }
+
+  .social-network {
+    padding-bottom: 38px;
   }
 
   .social-network__item img {

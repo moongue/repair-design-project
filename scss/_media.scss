@@ -349,7 +349,9 @@
       }
     }
   }
-
+  .title-banner {
+    font-size: 23px;
+  }
   h1 {
     font-size: 23px;
   }
@@ -455,14 +457,27 @@
       font-size: 15px;
     }
 
+
     &__btn {
       .btn {
         font-size: 15px;
       }
     }
 
+    &__list {
+      max-width: 270px;
+    }
+
     .price-description__item {
       font-size: 13px;
+    }
+  }
+  //Projects
+  .projects {
+    .price__img {
+      img {
+        filter: brightness(1);
+      }
     }
   }
   //Our team
@@ -510,7 +525,12 @@
       }
     }
   }
+  .map {
+    padding-bottom: 0;
+  }
   .social-network {
+    padding-bottom: 38px;
+
     &__item {
       img {
         height: 39px;
