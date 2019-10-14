@@ -36,18 +36,22 @@
 
     .steps-list {
       min-width: 375px;
+
       &__item {
         p {
           font-size: 16px;
         }
+
         &:nth-child(2) {
           margin-top: 43px;
           margin-left: 63px;
         }
+
         &:nth-child(3) {
           margin-top: 87px;
           margin-left: 82px;
         }
+
         &:nth-child(4) {
           margin-top: 86px;
           margin-left: 29px;
@@ -87,9 +91,11 @@
   //Steps
   .steps {
     background: url(../assets/images/bg-steps.png) no-repeat 0 0;
+
     .row {
       flex-direction: column;
     }
+
     .right-side {
       max-width: inherit;
     }
@@ -97,6 +103,7 @@
   //Catalog
   .catalog {
     margin-top: 100px;
+
     .content {
       align-items: center;
     }
@@ -255,21 +262,27 @@
     background: inherit;
     margin-top: 55px;
     margin-bottom: -144px;
-   .catalog-list {
-     padding: 0;
-     margin: 0 auto;
-   }
+
+    .catalog-list {
+      padding: 0;
+      margin: 0 auto;
+    }
+
     .catalog-representation {
       display: none;
     }
+
     .list-style {
       display: none;
     }
+
     .slider {
       display: block;
       margin-top: 30px;
+
       .slide {
         text-align: center;
+
         img {
           width: 100%;
           max-width: 400px;
@@ -283,6 +296,7 @@
     margin-top: 0;
     padding-top: 190px;
     background: $black;
+
     h3 {
       color: $white;
     }
@@ -304,10 +318,21 @@
   .more-description-person {
     color: $white;
   }
+  //Contacts
+  .contacts {
+    margin-top: 0;
+    padding-top: 0;
+  }
 }
 
 
 @media #{$xs} {
+  .xs-hide {
+    display: none;
+  }
+  .xs-show {
+    display: block;
+  }
   .logo {
     font-size: 12px;
   }
@@ -443,5 +468,58 @@
   //Our team
   .more-description-person {
     display: none;
+  }
+  //Contacts
+  .contacts {
+    background: $black;
+    padding-top: 76px;
+
+    .wrap-form {
+      margin: 0 auto;
+    }
+
+    .dark {
+      padding-top: 0;
+      background: inherit;
+    }
+
+    .bg-contacts {
+      background: inherit;
+    }
+
+    .form-feedback {
+      .row {
+        flex-direction: column;
+
+        label {
+          max-width: inherit;
+        }
+      }
+
+      .btn {
+        margin-top: 67px;
+        width: 100%;
+      }
+
+      .wrap-checkbox {
+        margin: 0;
+
+        label {
+          margin-top: 22px;
+        }
+      }
+    }
+  }
+  .social-network {
+    &__item {
+      img {
+        height: 39px;
+      }
+    }
+  }
+  .map {
+    iframe {
+      height: 300px;
+    }
   }
 }

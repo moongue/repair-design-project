@@ -1,0 +1,88 @@
+//Contacts
+.contacts {
+  margin-top: 160px;
+
+  .dark {
+    padding-top: 275px;
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.9) 100%)
+  }
+  .bg-contacts {
+    background: url(../assets/images/bg-contacts.jpg) no-repeat 100% 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  .wrap-form {
+    background: $black;
+    max-width: 883px;
+    margin: 0 auto -222px;
+    position: relative;
+  }
+  .form-feedback {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 34px 15px;
+    label {
+      margin-top: 45px;
+    }
+    .name-form {
+      font-family: 'Yeseva One', sans-serif;
+      font-size: 20px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .row {
+      display: flex;
+      justify-content: space-between;
+      label {
+        max-width: 230px;
+      }
+    }
+    .btn {
+      display: block;
+      margin: 50px auto 0;
+    }
+    .wrap-checkbox {
+      display: table;
+      margin: 0 auto;
+    }
+    .style-checkbox {
+      color: $white;
+    }
+  }
+  .input-styles {
+    color: $white;
+    &::placeholder {
+      color: $white;
+    }
+  }
+  .name-input {
+    color: $white-50;
+  }
+}
+.location {
+  font-family: 'Yeseva One', sans-serif;
+  color: $green;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 590px;
+  margin: 52px auto 0;
+  line-height: 1.3;
+}
+.map {
+  width: 100%;
+  max-width: 925px;
+  margin: 44px auto 0;
+  iframe {
+    height: 470px;
+    width: 100%;
+  }
+}
+.social-network {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  &__item {
+    margin: 0 7.5px;
+  }
+}

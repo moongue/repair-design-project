@@ -67,6 +67,10 @@ option:focus {
   color: #181818;
 }
 
+.xs-show {
+  display: none;
+}
+
 .btn {
   font-family: 'Futura Demi', sans-serif;
   font-size: 13px;
@@ -1347,6 +1351,10 @@ h1 {
   padding-top: 20px;
 }
 
+.our-client {
+  margin-top: 90px;
+}
+
 .our-client .clients {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1437,6 +1445,129 @@ h1 {
 .client__days {
   width: 55%;
   border-left: 1px solid #fff;
+}
+
+.contacts {
+  margin-top: 160px;
+}
+
+.contacts .dark {
+  padding-top: 275px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(3.47%, rgba(24, 24, 24, 0.9)), to(rgba(24, 24, 24, 0.9)));
+  background: -o-linear-gradient(top, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.9) 100%);
+  background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.9) 100%);
+}
+
+.contacts .bg-contacts {
+  background: url(../assets/images/bg-contacts.jpg) no-repeat 100% 0;
+  background-size: cover;
+}
+
+.contacts .wrap-form {
+  background: #131313;
+  max-width: 883px;
+  margin: 0 auto -222px;
+  position: relative;
+}
+
+.contacts .form-feedback {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 34px 15px;
+}
+
+.contacts .form-feedback label {
+  margin-top: 45px;
+}
+
+.contacts .form-feedback .name-form {
+  font-family: 'Yeseva One', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.contacts .form-feedback .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.contacts .form-feedback .row label {
+  max-width: 230px;
+}
+
+.contacts .form-feedback .btn {
+  display: block;
+  margin: 50px auto 0;
+}
+
+.contacts .form-feedback .wrap-checkbox {
+  display: table;
+  margin: 0 auto;
+}
+
+.contacts .form-feedback .style-checkbox {
+  color: #fff;
+}
+
+.contacts .input-styles {
+  color: #fff;
+}
+
+.contacts .input-styles::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.contacts .input-styles::-ms-input-placeholder {
+  color: #fff;
+}
+
+.contacts .input-styles::placeholder {
+  color: #fff;
+}
+
+.contacts .name-input {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.location {
+  font-family: 'Yeseva One', sans-serif;
+  color: #e3b873;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 590px;
+  margin: 52px auto 0;
+  line-height: 1.3;
+}
+
+.map {
+  width: 100%;
+  max-width: 925px;
+  margin: 44px auto 0;
+}
+
+.map iframe {
+  height: 470px;
+  width: 100%;
+}
+
+.social-network {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.social-network__item {
+  margin: 0 7.5px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1766,9 +1897,22 @@ h1 {
   .more-description-person {
     color: #fff;
   }
+
+  .contacts {
+    margin-top: 0;
+    padding-top: 0;
+  }
 }
 
 @media only screen and (max-width: 576px) {
+  .xs-hide {
+    display: none;
+  }
+
+  .xs-show {
+    display: block;
+  }
+
   .logo {
     font-size: 12px;
   }
@@ -1913,6 +2057,56 @@ h1 {
 
   .more-description-person {
     display: none;
+  }
+
+  .contacts {
+    background: #131313;
+    padding-top: 76px;
+  }
+
+  .contacts .wrap-form {
+    margin: 0 auto;
+  }
+
+  .contacts .dark {
+    padding-top: 0;
+    background: inherit;
+  }
+
+  .contacts .bg-contacts {
+    background: inherit;
+  }
+
+  .contacts .form-feedback .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .contacts .form-feedback .row label {
+    max-width: inherit;
+  }
+
+  .contacts .form-feedback .btn {
+    margin-top: 67px;
+    width: 100%;
+  }
+
+  .contacts .form-feedback .wrap-checkbox {
+    margin: 0;
+  }
+
+  .contacts .form-feedback .wrap-checkbox label {
+    margin-top: 22px;
+  }
+
+  .social-network__item img {
+    height: 39px;
+  }
+
+  .map iframe {
+    height: 300px;
   }
 }
 
