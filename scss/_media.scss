@@ -55,6 +55,10 @@
       }
     }
   }
+  //Our client
+  .client {
+    flex-basis: 32%;
+  }
 }
 
 @media #{$md} {
@@ -111,6 +115,10 @@
   }
   .person {
     margin-top: 110px;
+  }
+  // Our clients
+  .our-client {
+    display: none;
   }
 }
 
