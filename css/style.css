@@ -42,6 +42,10 @@ button:active {
   outline: none;
 }
 
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
 select:focus,
 select:hover,
 option:hover,
